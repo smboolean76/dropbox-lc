@@ -1,0 +1,40 @@
+/*--------------
+    BASE
+--------------*/
+@import 'reset.css';
+@import 'typography.css';
+
+body {
+    height: 200vh;
+}
+
+.partners {
+    display: flex;
+}
+.partner-col {
+    position: relative;
+    width: calc(100% / 3);
+    border: 1px solid;
+}
+.partner-col::before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+.partner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partner {
+    width: 50%;
+    height: 50%;
+    border: 1px solid red;
+}
+.center {
+    overflow-y: auto;
+}
